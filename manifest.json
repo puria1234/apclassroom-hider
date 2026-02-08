@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "AP Classroom Answer Hider",
+  "description": "Hide correct answers and explanations on AP Classroom while studying.",
+  "version": "2.1",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://apclassroom.collegeboard.org/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
